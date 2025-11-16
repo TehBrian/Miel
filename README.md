@@ -6,6 +6,8 @@ Miel is a Java compiler plugin that augments Java syntax with opinionated improv
 
 ## Changes
 
+### Primitives
+
 - `boolean` -> `bool`
 - `byte` -> `i8`
 - `short` -> `i16`
