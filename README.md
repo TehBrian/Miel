@@ -1,10 +1,10 @@
-## Miel
+# Miel
 
 > Java, but a bit sweeter.
 
 Miel is a Java compiler plugin that augments Java syntax with opinionated improvements.
 
-Here's the full list of changes:
+## Changes
 
 - `boolean` -> `bool`
 - `byte` -> `i8`
@@ -13,9 +13,25 @@ Here's the full list of changes:
 - `long` -> `i64`
 - `float` -> `f32`
 - `double` -> `f64`
+
+### Mutability
+
 - `final var myVar` -> `var myVar`
 - `var myVar` -> `mut var myVar`
+
+### Extensibility
+
 - `final class MyClass` -> `class MyClass`
 - `class MyClass` -> `open class MyClass`
+
+### Access
+
+- `private` -> `(default)`
+- `(default)` -> `internal`
+- `public` -> `pub`
+
+### Misc
+
 - `new MyClass()` -> `MyClass()`
 - `x instanceof X` -> `x is X`
+- `while (true)` -> `loop`
