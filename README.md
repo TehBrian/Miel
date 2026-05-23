@@ -29,11 +29,10 @@ Miel is a Java compiler plugin that augments Java syntax with opinionated improv
 ### Access
 
 - `private` -> `(default)`
-- `(default)` -> `internal`
+- `(default)` -> `pkg`
 - `public` -> `pub`
 
 ### Misc
 
-- `new MyClass()` -> `MyClass()`
 - `x instanceof X` -> `x is X`
 - `while (true)` -> `loop`
